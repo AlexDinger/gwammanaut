@@ -11,7 +11,7 @@ const home = () => {
           style={{ paddingTop: "56.25%" }}
         >
           <iframe
-            src="https://player.twitch.tv/?channel=gwammanaut&amp;parent=gwammanaut.vercel.app&amp;muted=true"
+            src="https://player.twitch.tv/?video=1098225445&amp;parent=gwammanaut.vercel.app&amp;muted=true"
             height="100%"
             width="100%"
             allowfullscreen="true"
