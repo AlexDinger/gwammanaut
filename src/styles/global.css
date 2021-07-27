@@ -3,6 +3,11 @@
 @tailwind utilities;
 @import "../styles/typography.css";
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 h1,
 h3 {
   font-family: "Prime Regular";

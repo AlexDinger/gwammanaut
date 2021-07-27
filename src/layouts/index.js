@@ -13,12 +13,12 @@ const index = ({ children, location }) => {
         }}
         className="w-screen h-screen absolute top-0 left-0 bg-no-repeat bg-cover bg-center filter grayscale brightness-50 z-0"
       ></div>
-      <div className="absolute w-screen h-screen top-0 left-0 z-10">
-        <header className="text-white w-full flex flex-col justify-center items-center space-y-2 mt-10">
+      <div className="absolute w-screen h-screen top-0 left-0 z-10 overflow-x-hidden overflow-y-scroll">
+        <header className="text-white w-full flex flex-col justify-center items-center space-y-2 my-10">
           <h1 className="text-yellow-400 text-8xl">GwammaNaut</h1>
           <h2 className="text-red-700 text-4xl">twitch.tv/GwammaNaut</h2>
         </header>
-        <main className="container mx-auto w-1/2">{children}</main>
+        <main className="container mx-auto w-1/2 mb-52">{children}</main>
       </div>
     </div>
   );
