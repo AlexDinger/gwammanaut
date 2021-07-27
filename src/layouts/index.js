@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
+import Astronaut from "../components/Astronaut";
 import background from "../images/bg.jpg";
 
-const index = ({ children, location }) => {
+const Index = ({ children, location }) => {
+  const [astroPos, setAstroPos] = useState({
+    x: 400,
+    y: 400,
+  });
+
   return (
     <div>
       <div
@@ -13,6 +19,7 @@ const index = ({ children, location }) => {
         }}
         className="w-screen h-screen absolute top-0 left-0 bg-no-repeat bg-cover bg-center filter grayscale brightness-50 z-0"
       ></div>
+      <Astronaut {...astroPos} />
       <div className="absolute w-screen h-screen top-0 left-0 z-10 overflow-x-hidden overflow-y-scroll">
         <header className="text-white w-full flex flex-col justify-center items-center space-y-2 my-10">
           <h1 className="text-yellow-400 text-8xl">GwammaNaut</h1>
@@ -24,4 +31,4 @@ const index = ({ children, location }) => {
   );
 };
 
-export default index;
+export default Index;
