@@ -11,7 +11,6 @@ const home = () => {
         width="100%"
         allowfullscreen="true"
         title="past broadcast"
-        className="self-center p-3 border-4 border-red-800"
       ></iframe>
 
       <article className="space-y-5">
