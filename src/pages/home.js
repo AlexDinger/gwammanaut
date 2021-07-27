@@ -6,7 +6,7 @@ const home = () => {
   return (
     <Page>
       <iframe
-        src="https://player.twitch.tv/?channel=gwammanaut&parent=https://gwammanaut.vercel.app&muted=true"
+        src="https://player.twitch.tv/?channel=gwammanaut&amp;parent=gwammanaut.vercel.app&amp;muted=true"
         height="720"
         width="1280"
         allowfullscreen="true"
