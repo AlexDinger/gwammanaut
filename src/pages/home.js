@@ -5,13 +5,21 @@ import Page from "../components/Page";
 const home = () => {
   return (
     <Page>
-      <iframe
-        src="https://player.twitch.tv/?channel=gwammanaut&amp;parent=gwammanaut.vercel.app&amp;muted=true"
-        height="500"
-        width="100%"
-        allowfullscreen="true"
-        title="past broadcast"
-      ></iframe>
+      <div>
+        <div
+          className="twitch-video relative h-0"
+          style={{ paddingTop: "56.25%" }}
+        >
+          <iframe
+            src="https://player.twitch.tv/?channel=gwammanaut&amp;parent=gwammanaut.vercel.app&amp;muted=true"
+            height="100%"
+            width="100%"
+            allowfullscreen="true"
+            title="past broadcast"
+            className="absolute w-full h-full top-0"
+          ></iframe>
+        </div>
+      </div>
 
       <article className="space-y-5">
         <Heading title="About Me" />
