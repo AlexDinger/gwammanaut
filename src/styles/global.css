@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "../styles/typography.css";
+
+h1,
+h3 {
+  font-family: "Prime Regular";
+}
+
+h2 {
+  font-family: "Prime Light";
+}
