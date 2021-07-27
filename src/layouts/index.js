@@ -1,15 +1,12 @@
 import React, { useState } from "react";
 import Astronaut from "../components/Astronaut";
 import background from "../images/bg.jpg";
-import useWindowDimensions from "../hooks/useWindowDimensions";
 
 const Index = ({ children, location }) => {
   const [astroPos, setAstroPos] = useState({
     x: 400,
     y: 400,
   });
-
-  const { height, width } = useWindowDimensions();
 
   return (
     <div>
