@@ -17,10 +17,10 @@ const Index = ({ children, location }) => {
         className="w-screen h-screen absolute top-0 left-0 bg-no-repeat bg-cover bg-center filter grayscale brightness-50 z-0"
       ></div>
       <Astronaut {...astroPos} />
-      <div className="absolute w-screen h-screen top-0 left-0 z-10 overflow-x-hidden content">
+      <div className="absolute w-screen h-screen top-0 left-0 z-10 overflow-x-hidden content bg-black bg-opacity-50">
         <header className="w-full flex flex-col justify-center items-center space-y-2 my-10">
-          <h1 className="text-yellow-400 md:text-8xl text-5xl">GwammaNaut</h1>
-          <h2 className="text-red-700 md:text-4xl text-2xl">
+          <h1 className="text-primary md:text-8xl text-5xl">GwammaNaut</h1>
+          <h2 className="text-secondary md:text-4xl text-2xl font-bold">
             twitch.tv/GwammaNaut
           </h2>
         </header>

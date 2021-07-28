@@ -20,15 +20,41 @@ const home = () => {
 
       <article className="space-y-5">
         <Heading title="About Me" />
-        <p className="text-white text-xl leading-relaxed">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum
+        <p className="text-white text-xl leading-relaxed ">
+          Hey! I'm Gwammanaut, and welcome to my stream! I'm a new streamer (if
+          you couldn't already tell), so all constructive feedback is very
+          appreciated and always welcomed! I'm a Purdue grad from a small town
+          in New Jersey near New York City. I've always had an interest in
+          gaming and entertainment, so this platform has been my home as a
+          viewer for many years, and this channel is my attempt to expand that
+          home and build my own community.
         </p>
+      </article>
+
+      {/* <article className="space-y-5">
+        <Heading title="Clips" />
+      </article> */}
+
+      <article className="space-y-5">
+        <Heading title="My Goals" />
+        <ul className="list-disc text-xl leading-relaxed text-white space-y-2 list-inside">
+          <li>
+            Build an inclusive community of gamers where everyone feels welcomed
+            and excited to be a part of.
+          </li>
+          <li>
+            Give myself a way to channel my creative juices in a major where I
+            don't really get the chance to elsewhere.
+          </li>
+          <li>
+            Break out of my shell a little bit more (I would say I'm more
+            extroverted, but I find it hard to open up sometimes.)
+          </li>
+          <li>
+            Have fun and create memories! And hopefully entertain others in the
+            process!
+          </li>
+        </ul>
       </article>
     </Page>
   );

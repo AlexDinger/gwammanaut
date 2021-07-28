@@ -20,7 +20,9 @@ h3 {
   font-family: "Prime Regular";
 }
 
-h2 {
+h2,
+p,
+li {
   font-family: "Prime Light";
 }
 
