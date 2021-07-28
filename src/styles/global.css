@@ -3,6 +3,13 @@
 @tailwind utilities;
 @import "../styles/typography.css";
 
+:root {
+  --width: 125px;
+  --height: 200px;
+  --x-speed: 30s;
+  --y-speed: 20s;
+}
+
 html,
 body {
   overflow-x: hidden;
@@ -15,4 +22,39 @@ h3 {
 
 h2 {
   font-family: "Prime Light";
+}
+
+.content {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: scroll;
+}
+
+.content::-webkit-scrollbar {
+  display: none;
+}
+
+.astro {
+  width: var(--width);
+  height: var(--height);
+}
+
+@keyframes x {
+  100% {
+    transform: translateX(calc(100vw - var(--width)));
+  }
+}
+
+@keyframes y {
+  100% {
+    transform: translateY(calc(100vh - var(--height))) rotate(360deg);
+  }
+}
+
+.x {
+  animation: x var(--x-speed) linear infinite alternate;
+}
+
+.y {
+  animation: y var(--y-speed) linear infinite alternate;
 }

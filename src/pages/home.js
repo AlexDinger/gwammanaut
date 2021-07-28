@@ -6,10 +6,7 @@ const home = () => {
   return (
     <Page>
       <div>
-        <div
-          className="twitch-video relative h-0"
-          style={{ paddingTop: "56.25%" }}
-        >
+        <div className="relative h-0" style={{ paddingTop: "56.25%" }}>
           <iframe
             src="https://player.twitch.tv/?video=1098225445&amp;parent=gwammanaut.vercel.app&amp;muted=true"
             height="100%"

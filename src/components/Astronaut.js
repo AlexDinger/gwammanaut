@@ -2,16 +2,9 @@ import React from "react";
 import Astro from "../images/astro_tp.png";
 
 const Astronaut = ({ x, y }) => {
-  console.log(x, y);
   return (
-    <div
-      style={{
-        top: `${y ? y : 0}`,
-        left: `${x ? x : 0}`,
-      }}
-      className="absolute w-52 h-auto mt-0"
-    >
-      <img src={Astro} />
+    <div className="absolute mt-0 w-screen h-screen astro x">
+      <img src={Astro} className="w-48 h-auto astro y" />
     </div>
   );
 };
